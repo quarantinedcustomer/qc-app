@@ -634,7 +634,7 @@ export class LandingPage extends React.Component<LandingPageProps> {
                   {/* Add subscriber to the follow-up sequence with a specified day (optional) */}
                   <input type="hidden" name="start_day" value="0" />
                   {/* Forward form data to your page (optional) */}
-                  <input type="hidden" name="forward_data" value="get" />
+                  <input type="hidden" name="forward_data" value="" />
                   {/* Subscriber button */}
                   <button
                     className="mx-auto lg:mx-0 hover:underline text-gray-800 font-extrabold rounded my-2 md:my-6 py-4 px-8 shadow-lg w-48"
