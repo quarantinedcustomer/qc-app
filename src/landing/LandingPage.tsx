@@ -146,10 +146,10 @@ export class LandingPage extends React.Component<LandingPageProps> {
                   <p className="mt-6">
                     <strong>
                       1. Recall your last restaurant visit, the last art
-                      performance, your last visit to your barber, your Yoga
-                      instructor, etc. Think of what local businesses that you
-                      would like to remain a customer with but can't throughout
-                      the quarantine.
+                      performance you attended, your last visit to your barber,
+                      your Yoga instructor, etc. Think of what local businesses
+                      that you would like to remain a customer with but can't
+                      throughout the quarantine.
                     </strong>
                   </p>
 
@@ -585,7 +585,7 @@ export class LandingPage extends React.Component<LandingPageProps> {
 
                   <p className="mt-6">
                     <strong>
-                      4. Add your email so that we can follow-up and specific
+                      4. Add your email so that we can follow-up with specific
                       instructions on how to help out
                     </strong>
                   </p>
@@ -637,7 +637,7 @@ export class LandingPage extends React.Component<LandingPageProps> {
                   <input type="hidden" name="forward_data" value="" />
                   {/* Subscriber button */}
                   <button
-                    className="mx-auto lg:mx-0 hover:underline text-gray-800 font-extrabold rounded my-2 md:my-6 py-4 px-8 shadow-lg w-48"
+                    className="mb-6 mx-auto lg:mx-0 hover:underline text-gray-800 font-extrabold rounded my-2 md:my-6 py-4 px-8 shadow-lg w-48"
                     type="submit"
                   >
                     Make a difference
