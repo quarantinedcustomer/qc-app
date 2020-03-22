@@ -135,6 +135,7 @@ export class LandingPage extends React.Component<LandingPageProps> {
             </div>
 
             <div>
+              {/*
               <label className="block">
                 <span className="text-gray-700">
                   What do we call you, Hero?
@@ -185,6 +186,7 @@ export class LandingPage extends React.Component<LandingPageProps> {
                   </span>
                 </label>
               </div>
+              */}
               <form
                 action="https://app.getresponse.com/add_subscriber.html"
                 accept-charset="utf-8"
@@ -573,6 +575,8 @@ export class LandingPage extends React.Component<LandingPageProps> {
                 {/* Subscriber button */}
                 <input type="submit" value="Subscribe" />
               </form>
+
+              {/*
               <form>
                 <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
                   <div className="-mx-3 md:flex mb-6">
@@ -691,6 +695,7 @@ export class LandingPage extends React.Component<LandingPageProps> {
                   </div>
                 </div>
               </form>
+              */}
             </div>
 
             {/*
