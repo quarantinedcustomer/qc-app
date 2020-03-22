@@ -80,7 +80,7 @@ export class ThankYouPage extends React.Component<ThankYouPageProps> {
                     </li>
                     <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                       <a
-                        href="https://www.iubenda.com/privacy-policy/todo/cookie-policy"
+                        href="https://www.iubenda.com/privacy-policy/82474744/cookie-policy"
                         target="_blank"
                         className="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
                       >
@@ -89,7 +89,7 @@ export class ThankYouPage extends React.Component<ThankYouPageProps> {
                     </li>
                     <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                       <a
-                        href="https://www.iubenda.com/privacy-policy/todo"
+                        href="https://www.iubenda.com/privacy-policy/82474744"
                         target="_blank"
                         className="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
                       >

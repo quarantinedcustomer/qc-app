@@ -10,14 +10,14 @@ export default function () {
       you do, we will get to see that you visited our site. Now the legal
       phrasing: By using our website, you’re agreeing to the collection of data
       as described in our{" "}
-      <a href="https://www.iubenda.com/privacy-policy/92143021" target="_blank">
-        Website Data Collection Policy
+      <a href="https://www.iubenda.com/privacy-policy/82474744" target="_blank">
+        Privacy Policy
       </a>
       .
       {/*
       We use cookies (and other similar technologies) to collect data to improve your experience on
       our site. By using our website, you’re agreeing to the collection of data as described in our{' '}
-      <a href="https://www.iubenda.com/privacy-policy/92143021" target="_blank">
+      <a href="https://www.iubenda.com/privacy-policy/82474744" target="_blank">
         Website Data Collection Policy
       </a>
       .

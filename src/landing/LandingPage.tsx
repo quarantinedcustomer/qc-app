@@ -611,7 +611,14 @@ export class LandingPage extends React.Component<LandingPageProps> {
                         className="form-checkbox"
                       />
                       <label htmlFor="webform_consent#Sw8N_0" className="ml-2">
-                        I agree to to the privacy policy
+                        I agree to to the{" "}
+                        <a
+                          href="https://www.iubenda.com/privacy-policy/82474744"
+                          target="_blank"
+                          className="underline"
+                        >
+                          privacy policy
+                        </a>
                       </label>{" "}
                     </label>
                   </div>
@@ -1114,7 +1121,7 @@ export class LandingPage extends React.Component<LandingPageProps> {
                     </li>
                     <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                       <a
-                        href="https://www.iubenda.com/privacy-policy/todo/cookie-policy"
+                        href="https://www.iubenda.com/privacy-policy/82474744/cookie-policy"
                         target="_blank"
                         className="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
                       >
@@ -1123,7 +1130,7 @@ export class LandingPage extends React.Component<LandingPageProps> {
                     </li>
                     <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                       <a
-                        href="https://www.iubenda.com/privacy-policy/todo"
+                        href="https://www.iubenda.com/privacy-policy/82474744"
                         target="_blank"
                         className="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
                       >
