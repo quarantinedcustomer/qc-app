@@ -54,7 +54,7 @@ closeBehavior={
   return (
     <div>
       <ConsentManager
-        writeKey="oyWMlwy1OIKcdOuPJkZsx3H4cjbNPmeM"
+        writeKey="qTmQd1uZfPljD6mV4iuxifavGKn5xuCC"
         shouldRequireConsent={inEU}
         implyConsentOnInteraction={true}
         bannerContent={bannerContent}
