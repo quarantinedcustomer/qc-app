@@ -2,7 +2,7 @@ import { openConsentManager } from "@segment/consent-manager";
 import { Link } from "gatsby";
 import React from "react";
 import { View } from "react-native";
-import SegmentConsentManager from "../editor/components/SegmentConsentManager";
+import SegmentConsentManager from "../components/SegmentConsentManager";
 import SEO from "../seo";
 // @ts-ignore
 import UndrawArtMuseumSvg from "./undraw_art_museum_8or4.inline.svg";

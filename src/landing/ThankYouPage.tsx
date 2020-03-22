@@ -2,7 +2,7 @@ import { openConsentManager } from "@segment/consent-manager";
 import { Link } from "gatsby";
 import React from "react";
 import { View } from "react-native";
-import SegmentConsentManager from "../editor/components/SegmentConsentManager";
+import SegmentConsentManager from "../components/SegmentConsentManager";
 import SEO from "../seo";
 
 interface ThankYouPageProps {
