@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Quarantined Customer`,
-    titleTemplate: "%s · Quarantined Customer",
-    description: `Your local business needs you, make a difference by keep remaining a customer`,
+    titleTemplate: "%s · Stay quarantined, remain a customer",
+    description: `Your local business needs your help in order to survive, make a difference by reaching out`,
     url: "https://quarantinedcustomer.com", // No trailing slash allowed!
     image: "/og/qc-screen-og-image-1.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@quarantinedcustomer",

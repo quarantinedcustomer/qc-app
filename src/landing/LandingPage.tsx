@@ -841,7 +841,7 @@ export class LandingPage extends React.Component<LandingPageProps> {
           <section className="bg-gray-100 border-b py-8">
             <div className="container max-w-5xl mx-auto m-8">
               <h2 className="p-6 w-full my-2 text-4xl lg:text-5xl font-black leading-tight text-center text-gray-800">
-                How it works
+                Why Quarantined Customer?
               </h2>
               <div className="w-full mb-4">
                 <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t" />
@@ -892,19 +892,19 @@ export class LandingPage extends React.Component<LandingPageProps> {
                 <div className="flex w-full sm:w-1/2 p-6">
                   <div className="flex flex-wrap content-center text-center sm:text-right">
                     <h3 className="w-full text-3xl text-gray-800 font-bold leading-none mb-12 sm:mb-3">
-                      Matchmaking
+                      How it works in practice
                     </h3>
                     <p className="text-gray-600">
-                      We propose a matchmaking service that allows businesses to
-                      list themselves, talk about their struggles and how they
-                      are trying to survive. We encourage business owners to
-                      reach and and ask for help, if they need technical
-                      assistance setting up a live stream, someone in their
-                      community is bound to know. This is where the
-                      QuarantinedCustomer comes in, we encourage customers to
-                      step up and volunteer their skills and expertise. Create a
-                      profile, list your skills and we'll match you to the
-                      business where you can do the most good.
+                      Businesses may publish their quarantine-specific
+                      workarounds here on the site, informing their customers
+                      how they are best helped during the quarantive. We
+                      encourage business owners to reach and and ask for help -
+                      if they need technical assistance setting up a live
+                      stream, someone in their community is bound to know. We
+                      encourage quarantined customers to step up and volunteer
+                      their skills and expertise. Create a profile, list your
+                      skills and we'll match you to the business where you can
+                      do the most good.
                     </p>
                   </div>
                 </div>
@@ -915,21 +915,20 @@ export class LandingPage extends React.Component<LandingPageProps> {
 
               <div className="mb-12 sm:mb-0 flex flex-wrap flex-col-reverse sm:flex-row">
                 <div className="w-full sm:w-1/2 p-6 mt-6">
-                  <UndrawTypewriterSvg className="w-full h-64 mx-auto" />
+                  <UndrawToTheMoonSvg className="w-full h-64 mx-auto" />
                 </div>
                 <div className="flex w-full sm:w-1/2 p-6 mt-6">
                   <div className="flex flex-wrap content-center text-center sm:text-left">
                     <h3 className="w-full text-3xl text-gray-800 font-bold leading-none mb-12 sm:mb-3">
-                      MVP
+                      This is just the beginning
                     </h3>
                     <p className="text-gray-600">
-                      Our MVP is a simple information collection form, we will
-                      follow up on every submission to get create a more
-                      detailed profile of each business and customer that signs
-                      up. We'll do the matching and get people talking. If
-                      there's interest we can automate the process with a web
-                      app that collects the information and possibly does the
-                      matching as well.
+                      This website is currently a simple information collection
+                      form. We will manually follow up on every submission, help
+                      with the matching and get people talking. If there's
+                      enough interest in the initiative we will automate the
+                      process with a web app that collects the information and
+                      possibly does the matching as well.
                     </p>
                   </div>
                 </div>
@@ -1176,12 +1175,12 @@ export class LandingPage extends React.Component<LandingPageProps> {
                   </ul>
                 </div>
                     */}
-                {/*
                 <div className="flex-1">
                   <p className="uppercase font-extrabold text-gray-500 md:mb-6">
-                    Company
+                    About Us
                   </p>
                   <ul className="list-reset mb-6">
+                    {/*
                     <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                       <a
                         href="#"
@@ -1190,14 +1189,17 @@ export class LandingPage extends React.Component<LandingPageProps> {
                         Official Blog
                       </a>
                     </li>
+                */}
                     <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                       <a
-                        href="#"
+                        href="https://app.hackjunction.com/projects/hack-the-crisis-finland/view/5e7642a01c64ad0043f871db"
                         className="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
+                        target="_blank"
                       >
-                        About Us
+                        Project Information &amp; Team
                       </a>
                     </li>
+                    {/*
                     <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                       <a
                         href="#"
@@ -1206,9 +1208,9 @@ export class LandingPage extends React.Component<LandingPageProps> {
                         Contact
                       </a>
                     </li>
+                    */}
                   </ul>
                 </div>
-                */}
               </div>
             </div>
           </footer>

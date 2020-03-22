@@ -39,15 +39,16 @@ export class ThankYouPage extends React.Component<ThankYouPageProps> {
           <div className="container mx-auto min-h-screen">
             <div className="text-center px-3 lg:px-0">
               <h1 className="my-4 text-2xl md:text-3xl lg:text-5xl font-black leading-tight">
-                Thank you
+                Thank you!
               </h1>
               <p className="leading-normal text-gray-800 text-base md:text-xl lg:text-2xl mb-8">
-                Your local business needs you to survive the largest quarantine
-                in human history, make a difference by reaching out
+                Your local business needs your help in order to survive, and you
+                have now taken the first step towards making a difference by
+                reaching out
               </p>
 
               <button className="mx-auto lg:mx-0 hover:underline text-gray-800 font-extrabold rounded my-2 md:my-6 py-4 px-8 shadow-lg w-48">
-                <Link to="/app/">Go to App</Link>
+                <Link to="/">Go back</Link>
               </button>
             </div>
           </div>
@@ -99,6 +100,7 @@ export class ThankYouPage extends React.Component<ThankYouPageProps> {
                   </ul>
                 </div>
 
+                {/*
                 <div className="flex-1">
                   <p className="uppercase font-extrabold text-gray-500 md:mb-6">
                     Social
@@ -113,7 +115,6 @@ export class ThankYouPage extends React.Component<ThankYouPageProps> {
                         Facebook
                       </a>
                     </li>
-                    {/*
                     <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                       <a
                         href="#"
@@ -123,7 +124,6 @@ export class ThankYouPage extends React.Component<ThankYouPageProps> {
                         Linkedin
                       </a>
                     </li>
-                    */}
                     <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                       <a
                         href="https://twitter.com/todo"
@@ -133,6 +133,43 @@ export class ThankYouPage extends React.Component<ThankYouPageProps> {
                         Twitter
                       </a>
                     </li>
+                  </ul>
+                </div>
+                    */}
+                <div className="flex-1">
+                  <p className="uppercase font-extrabold text-gray-500 md:mb-6">
+                    Company
+                  </p>
+                  <ul className="list-reset mb-6">
+                    {/*
+                    <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                      <a
+                        href="#"
+                        className="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
+                      >
+                        Official Blog
+                      </a>
+                    </li>
+                */}
+                    <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                      <a
+                        href="https://app.hackjunction.com/projects/hack-the-crisis-finland/view/5e7642a01c64ad0043f871db"
+                        className="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
+                        target="_blank"
+                      >
+                        About Us
+                      </a>
+                    </li>
+                    {/*
+                    <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                      <a
+                        href="#"
+                        className="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
+                      >
+                        Contact
+                      </a>
+                    </li>
+                    */}
                   </ul>
                 </div>
               </div>
