@@ -117,8 +117,8 @@ export class LandingPage extends React.Component<LandingPageProps> {
                 Stay quarantined, remain a customer
               </h1>
               <p className="leading-normal text-gray-800 text-base md:text-xl lg:text-2xl mb-8">
-                Your local business needs you to survive the largest quarantine
-                in human history, make a difference by reaching out
+                Your local business needs your help in order to survive, make a
+                difference by reaching out
               </p>
 
               {/*
