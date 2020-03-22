@@ -1140,6 +1140,7 @@ export class LandingPage extends React.Component<LandingPageProps> {
                   </ul>
                 </div>
 
+                {/*
                 <div className="flex-1">
                   <p className="uppercase font-extrabold text-gray-500 md:mb-6">
                     Social
@@ -1154,7 +1155,6 @@ export class LandingPage extends React.Component<LandingPageProps> {
                         Facebook
                       </a>
                     </li>
-                    {/*
                     <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                       <a
                         href="#"
@@ -1164,7 +1164,6 @@ export class LandingPage extends React.Component<LandingPageProps> {
                         Linkedin
                       </a>
                     </li>
-                    */}
                     <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                       <a
                         href="https://twitter.com/todo"
@@ -1176,6 +1175,7 @@ export class LandingPage extends React.Component<LandingPageProps> {
                     </li>
                   </ul>
                 </div>
+                    */}
                 {/*
                 <div className="flex-1">
                   <p className="uppercase font-extrabold text-gray-500 md:mb-6">
