@@ -145,7 +145,7 @@ export class LandingPage extends React.Component<LandingPageProps> {
                 <div className="text-center px-3 lg:px-0 lg:mx-48">
                   <p className="mt-6">
                     <strong>
-                      1. Recall you last restaurant visit, the last art
+                      1. Recall your last restaurant visit, the last art
                       performance, your last visit to your barber, your Yoga
                       instructor, etc. Think of what local businesses that you
                       would like to remain a customer with but can't throughout
