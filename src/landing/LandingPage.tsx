@@ -135,9 +135,10 @@ export class LandingPage extends React.Component<LandingPageProps> {
             </div>
 
             <div>
-              WHAT DO WE CALL YOU, HERO?
               <label className="block">
-                <span className="text-gray-700">Name</span>
+                <span className="text-gray-700">
+                  What do we call you, Hero?
+                </span>
                 <input
                   className="form-input mt-1 block w-full"
                   placeholder="Jane Doe"
