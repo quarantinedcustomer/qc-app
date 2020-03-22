@@ -1,0 +1,6 @@
+.expo
+node_modules
+.cache
+public
+web-build
+test/fixtures/

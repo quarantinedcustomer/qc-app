@@ -1,0 +1,18 @@
+* "gain1" Gain 1
+  - [x] Gain 1 Step 1
+    - [ ] Gain 1 Step 1 Substep 1
+  - [x] Gain 1 Step 2
+    - [ ] Gain 1 Step 2 Substep 1
+    - [ ] Gain 1 Step 2 Substep 2
+  - [x] Gain 1 Step 3
+    - [ ] Gain 1 Step 3 Substep 1
+    - [ ] Gain 1 Step 3 Substep 2
+      - [ ] Gain 1 Step 3 Substep 2 Subsubstep 1
+- "gain2" Gain 2
+  - [x] Gain 2 Step 1
+  - [x] Gain 2 Step 2
+  - [x] Gain 2 Step 3
+- "gain3" Gain 3
+  - [x] Gain 3 Step 1
+  - [x] Gain 3 Step 2
+  - [x] Gain 3 Step 3

@@ -1,0 +1,3 @@
+- Goal
+  - Canvas
+  - Icon

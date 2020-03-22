@@ -1,0 +1,125 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "yarn gatsby develop",
+    "build:web:serve": "yarn gatsby serve",
+    "build:web": "yarn gatsby build",
+    "build:android": "expo build:android",
+    "build:ios": "expo build:ios",
+    "format": "prettier '**/*.{js,css,json,md,ts,tsx}' --write",
+    "lint": "tslint -t verbose -p tsconfig.json src/**/*.{ts,tsx}",
+    "test": "node_modules/.bin/jest",
+    "test:debug": "node --inspect-brk node_modules/jest/bin/jest.js --runInBand",
+    "deploy:web": "now switch clerklabs && now",
+    "deploy:web:staging": "now switch clerklabs && now --target staging",
+    "deploy:web:prod": "now switch clerklabs && now --prod",
+    "build": "npm run build:web",
+    "eject": "expo eject",
+    "fix": "npm run format && tslint -t verbose -p tsconfig.json --fix src/**/*.{ts,tsx}"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^10.0.6",
+    "@material-ui/core": "^4.5.1",
+    "@material-ui/icons": "^4.5.1",
+    "@segment/consent-manager": "^4.3.0",
+    "@segment/in-eu": "^0.3.0",
+    "clsx": "^1.0.4",
+    "codemirror": "^5.49.0",
+    "cytoscape": "^3.12.1",
+    "cytoscape-cose-bilkent": "^4.1.0",
+    "cytoscape-dagre": "^2.2.2",
+    "expo": "^35.0.0",
+    "gatsby": "^2.18.7",
+    "gatsby-image": "^2.2.34",
+    "gatsby-plugin-manifest": "^2.2.31",
+    "gatsby-plugin-postcss": "^2.1.16",
+    "gatsby-plugin-react-helmet": "^3.1.16",
+    "gatsby-plugin-react-native-web": "^3.0.0-beta.1",
+    "gatsby-plugin-react-svg": "^2.1.2",
+    "gatsby-plugin-sharp": "^2.3.5",
+    "gatsby-plugin-typescript": "^2.1.20",
+    "gatsby-source-filesystem": "^2.1.40",
+    "gatsby-transformer-sharp": "^2.3.7",
+    "hypermd": "^0.3.11",
+    "immutable": "^4.0.0-rc.12",
+    "mobx": "^5.14.0",
+    "mobx-persist": "^0.4.1",
+    "mobx-react": "^6.1.4",
+    "react": "^16.12.0",
+    "react-codemirror2": "^6.0.0",
+    "react-cytoscapejs": "^1.2.1",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz",
+    "react-native-circular-action-menu": "^0.5.0",
+    "react-native-elements": "^1.2.6",
+    "react-native-web": "^0.11.7",
+    "react-resize-detector": "^4.2.1",
+    "react-script-loader-hoc": "^1.2.2",
+    "react-script-tag": "^1.1.2",
+    "react-select": "^3.0.8",
+    "react-splitter-layout": "^4.0.0",
+    "typeface-roboto": "0.0.75"
+  },
+  "devDependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1",
+    "@types/cytoscape": "^3.8.3",
+    "@types/jest": "^24.0.20",
+    "@types/react": "^16.8.23",
+    "@types/react-helmet": "^5.0.14",
+    "@types/react-native": "^0.57.65",
+    "@types/react-select": "^3.0.5",
+    "@types/react-splitter-layout": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
+    "babel-preset-expo": "^7.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-universe": "^2.3.0",
+    "husky": "^2.1.0",
+    "jest-expo": "^35.0.0",
+    "lint-staged": "^8.1.5",
+    "now": "^17.0.4",
+    "prettier": "^2.0.1",
+    "tailwindcss": "^1.1.4",
+    "tslint": "^5.17.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.4.5"
+  },
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.17.3",
+    "node": ">= 10.15.3"
+  },
+  "eslintConfig": {
+    "extends": "universe/web",
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  },
+  "jest": {
+    "preset": "jest-expo/web"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "private": true,
+  "lint-staged": {
+    "*.{js,css,json,md,ts,tsx}": [
+      "prettier --write",
+      "git add"
+    ],
+    "src/**/*.{ts,tsx}": [
+      "tslint -t verbose -p tsconfig.json --fix",
+      "git add"
+    ]
+  }
+}
