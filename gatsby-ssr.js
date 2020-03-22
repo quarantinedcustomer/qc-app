@@ -20,7 +20,9 @@ exports.onRenderBody = ({ setHeadComponents }) => {
     // no analytics.load before cookie consent has been established
     window.analytics.writeKey = "${
       process.env.NODE_ENV === "production" ? prodKey : devKey
-    }"
+    }";
+    // will be queued for after consent has been given
+    analytics.page();
   }}();`;
   setHeadComponents([
     <script
