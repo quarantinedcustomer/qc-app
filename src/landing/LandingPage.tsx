@@ -153,11 +153,18 @@ export class LandingPage extends React.Component<LandingPageProps> {
                     </strong>
                   </p>
 
-                  <input
-                    className="form-input mt-1 block w-full"
-                    name="custom_local_business_to_save"
-                    placeholder=""
-                  />
+                  <label className="block mt-4">
+                    <span className="text-gray-700">
+                      Local business that you want to help survive throughout
+                      the quarantine:
+                    </span>
+                    <input
+                      className="form-input mt-1 block w-full"
+                      type="text"
+                      name="custom_local_business_to_save"
+                      placeholder=""
+                    />
+                  </label>
 
                   <p className="mt-6">
                     <strong>
@@ -167,13 +174,17 @@ export class LandingPage extends React.Component<LandingPageProps> {
                     </strong>
                   </p>
 
-                  <br />
-
-                  <input
-                    className="form-input mt-1 block w-full"
-                    name="custom_help_offered"
-                    placeholder=""
-                  />
+                  <label className="block mt-4">
+                    <span className="text-gray-700">
+                      How you are willing to help:
+                    </span>
+                    <input
+                      className="form-input mt-1 block w-full"
+                      type="text"
+                      name="custom_help_offered"
+                      placeholder=""
+                    />
+                  </label>
 
                   <p className="mt-6">
                     <strong>
@@ -184,7 +195,7 @@ export class LandingPage extends React.Component<LandingPageProps> {
                     </strong>
                   </p>
 
-                  <label className="block">
+                  <label className="block mt-6">
                     <span className="text-gray-700">
                       What do we call you, Hero?
                     </span>
