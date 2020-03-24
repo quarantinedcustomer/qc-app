@@ -22,6 +22,19 @@ interface LandingPageProps {
   };
 }
 
+const openConsentManagerClickHandler = (e: any) => {
+  e.preventDefault();
+  console.info("Opening the consent manager");
+  try {
+    openConsentManager();
+  } catch (err) {
+    console.info("Error caught trying to open the consent manager: ", err);
+  }
+  console.info(
+    "Opened the consent manager (if it didn't show, tracking might be blocked already by the browser or an extension, in which case you don't need the consent manager."
+  );
+};
+
 export class LandingPage extends React.Component<LandingPageProps> {
   public render() {
     const { defaultTitle, screenshot } = this.props.landingPageData;
@@ -1053,9 +1066,9 @@ export class LandingPage extends React.Component<LandingPageProps> {
           <footer className="bg-white ">
             <div className="container mx-auto mt-8 px-8">
               <div className="w-full flex flex-col md:flex-row py-6">
-                <div className="flex-1 mb-6 mr-12">
+                <div className="flex-1 mb-6 md:mr-6 lg:mr-12">
                   <a
-                    className="text-orange-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+                    className="text-orange-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl lg:mb-3 block whitespace-no-wrap"
                     href="#"
                   >
                     {/*
@@ -1069,15 +1082,32 @@ export class LandingPage extends React.Component<LandingPageProps> {
                     */}
                     {defaultTitle}
                   </a>
+                  Made with ♡ by{" "}
+                  <a
+                    href="https://clerklabs.com"
+                    target="_blank"
+                    className="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
+                  >
+                    Clerk
+                  </a>{" "}
+                  and{" "}
+                  <a
+                    href="https://avnt.io"
+                    target="_blank"
+                    className="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
+                  >
+                    AVNT
+                  </a>{" "}
+                  Labs
                 </div>
 
                 {/*
                 <div className="flex-1">
-                  <p className="uppercase font-extrabold text-gray-500 md:mb-6">
+                  <p className="uppercase font-extrabold text-gray-500 lg:mb-6 md:pt-2 lg:pt-5">
                     Links
                   </p>
                   <ul className="list-reset mb-6">
-                    <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <li className="mt-2 inline-block mr-6 md:block md:mr-0">
                       <a
                         href="#"
                         className="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
@@ -1085,7 +1115,7 @@ export class LandingPage extends React.Component<LandingPageProps> {
                         FAQ
                       </a>
                     </li>
-                    <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <li className="mt-2 inline-block mr-6 md:block md:mr-0">
                       <a
                         href="#"
                         className="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
@@ -1093,7 +1123,7 @@ export class LandingPage extends React.Component<LandingPageProps> {
                         Help
                       </a>
                     </li>
-                    <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <li className="mt-2 inline-block mr-6 md:block md:mr-0">
                       <a
                         href="mailto:support@clerk.ai"
                         className="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
@@ -1105,20 +1135,20 @@ export class LandingPage extends React.Component<LandingPageProps> {
                 </div>
                 */}
                 <div className="flex-1">
-                  <p className="uppercase font-extrabold text-gray-500 md:mb-6">
+                  <p className="uppercase font-extrabold text-gray-500 lg:mb-6 md:pt-2 lg:pt-5">
                     Legal
                   </p>
                   <ul className="list-reset mb-6">
-                    <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <li className="mt-2 inline-block mr-6 md:block md:mr-0">
                       <a
-                        href="javascript:void(0);"
+                        href="#"
                         className="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
-                        onClick={openConsentManager}
+                        onClick={openConsentManagerClickHandler}
                       >
                         Website Data Collection Preferences
                       </a>
                     </li>
-                    <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <li className="mt-2 inline-block mr-6 md:block md:mr-0">
                       <a
                         href="https://www.iubenda.com/privacy-policy/82474744/cookie-policy"
                         target="_blank"
@@ -1127,7 +1157,7 @@ export class LandingPage extends React.Component<LandingPageProps> {
                         Cookie Policy
                       </a>
                     </li>
-                    <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <li className="mt-2 inline-block mr-6 md:block md:mr-0">
                       <a
                         href="https://www.iubenda.com/privacy-policy/82474744"
                         target="_blank"
@@ -1141,11 +1171,11 @@ export class LandingPage extends React.Component<LandingPageProps> {
 
                 {/*
                 <div className="flex-1">
-                  <p className="uppercase font-extrabold text-gray-500 md:mb-6">
+                  <p className="uppercase font-extrabold text-gray-500 lg:mb-6 md:pt-2 lg:pt-5">
                     Social
                   </p>
                   <ul className="list-reset mb-6">
-                    <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <li className="mt-2 inline-block mr-6 md:block md:mr-0">
                       <a
                         href="https://fb.me/todo"
                         target="_blank"
@@ -1154,7 +1184,7 @@ export class LandingPage extends React.Component<LandingPageProps> {
                         Facebook
                       </a>
                     </li>
-                    <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <li className="mt-2 inline-block mr-6 md:block md:mr-0">
                       <a
                         href="#"
                         target="_blank"
@@ -1163,7 +1193,7 @@ export class LandingPage extends React.Component<LandingPageProps> {
                         Linkedin
                       </a>
                     </li>
-                    <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <li className="mt-2 inline-block mr-6 md:block md:mr-0">
                       <a
                         href="https://twitter.com/todo"
                         target="_blank"
@@ -1176,12 +1206,12 @@ export class LandingPage extends React.Component<LandingPageProps> {
                 </div>
                     */}
                 <div className="flex-1">
-                  <p className="uppercase font-extrabold text-gray-500 md:mb-6">
+                  <p className="uppercase font-extrabold text-gray-500 lg:mb-6 md:pt-2 lg:pt-5">
                     About Us
                   </p>
                   <ul className="list-reset mb-6">
                     {/*
-                    <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <li className="mt-2 inline-block mr-6 md:block md:mr-0">
                       <a
                         href="#"
                         className="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
@@ -1190,7 +1220,7 @@ export class LandingPage extends React.Component<LandingPageProps> {
                       </a>
                     </li>
                 */}
-                    <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <li className="mt-2 inline-block mr-6 md:block md:mr-0">
                       <a
                         href="https://app.hackjunction.com/projects/hack-the-crisis-finland/view/5e7642a01c64ad0043f871db"
                         className="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
@@ -1200,7 +1230,7 @@ export class LandingPage extends React.Component<LandingPageProps> {
                       </a>
                     </li>
                     {/*
-                    <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                    <li className="mt-2 inline-block mr-6 md:block md:mr-0">
                       <a
                         href="#"
                         className="font-light no-underline hover:underline text-gray-800 hover:text-orange-500"
